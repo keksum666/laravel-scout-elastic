@@ -4,7 +4,7 @@ namespace Tamayo\LaravelScoutElastic\Engines;
 
 use Laravel\Scout\Builder;
 use Laravel\Scout\Engines\Engine;
-use Elasticsearch\Client as Elastic;
+use Elastic\Elasticsearch\Client as Elastic;
 use Illuminate\Database\Eloquent\Collection;
 
 class ElasticsearchEngine extends Engine
@@ -19,7 +19,7 @@ class ElasticsearchEngine extends Engine
     /**
      * Create a new engine instance.
      *
-     * @param  \Elasticsearch\Client  $elastic
+     * @param  Elastic  $elastic
      * @return void
      */
     public function __construct(Elastic $elastic)
